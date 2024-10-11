@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.video-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .video-container iframe {
+            width: 760px; /* Adjust the width as needed */
+            height: 515px; /* Maintain the aspect ratio */
+        }
+</style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Prediction Result</h1>
+        <div id="resultMessage" class="alert" role="alert"></div>
+        <img id="resultImage" class="img-fluid mt-4" alt="Prediction Image"></br></br>
+        <a href="/" class="btn btn-primary mt-3">Go Back</a>
+    </div></br></br>
+    <div class="video-container">
+    <iframe width="1103" height="620" src="https://www.youtube.com/embed/Acl6SejJe18" title="Lung Cancer Awareness" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div></br></br>
+    <div id="precautionContainer" class="container" style="display: none;margin-top: 20px;">
+        <h1>Precautionary Measures to Prevent Lung Cancer</h1>
+        <h2>1. Avoid Smoking</h2>
+        <ul>
+            <li><strong>Never Start Smoking:</strong> If you don't smoke, don't start. Avoid experimenting with smoking or using tobacco products.</li>
+            <li><strong>Quit Smoking:</strong> If you do smoke, seek help to quit. Use resources like nicotine replacement therapies, prescription medications, counseling, and support groups.</li>
+            <li><strong>Avoid E-Cigarettes:</strong> E-cigarettes and vaping can also be harmful and may lead to the use of traditional tobacco products.</li>
+        </ul>
+
+        <h2>2. Avoid Secondhand Smoke</h2>
+        <ul>
+            <li><strong>Create a Smoke-Free Home:</strong> Ensure that no one smokes in your home. Create a smoke-free environment.</li>
+            <li><strong>Avoid Places Where Smoking is Allowed:</strong> Choose smoke-free restaurants, hotels, and other public places.</li>
+        </ul>
+
+        <h2>3. Test Your Home for Radon</h2>
+        <ul>
+            <li><strong>Radon Testing Kits:</strong> Purchase a radon testing kit from a hardware store or online to check the radon levels in your home.</li>
+            <li><strong>Professional Testing:</strong> Hire a qualified professional to test and, if necessary, mitigate radon levels in your home.</li>
+        </ul>
+
+        <h2>4. Occupational Safety</h2>
+        <ul>
+            <li><strong>Follow Safety Guidelines:</strong> If you work with hazardous materials, strictly follow occupational safety guidelines.</li>
+            <li><strong>Use Protective Equipment:</strong> Wear protective gear such as masks and respirators when dealing with harmful substances.</li>
+            <li><strong>Workplace Safety Programs:</strong> Participate in workplace safety programs and advocate for better safety standards.</li>
+        </ul>
+
+        <h2>5. Healthy Diet</h2>
+        <ul>
+            <li><strong>Eat a Variety of Fruits and Vegetables:</strong> Incorporate a wide range of colorful fruits and vegetables into your diet.</li>
+            <li><strong>Limit Processed Foods:</strong> Reduce the intake of processed foods and red meats, which may contain harmful additives.</li>
+            <li><strong>Stay Hydrated:</strong> Drink plenty of water to help flush out toxins from your body.</li>
+        </ul>
+
+        <h2>6. Regular Exercise</h2>
+        <ul>
+            <li><strong>Engage in Physical Activity:</strong> Aim for at least 150 minutes of moderate aerobic exercise or 75 minutes of vigorous exercise each week.</li>
+            <li><strong>Include Strength Training:</strong> Incorporate strength training exercises at least twice a week.</li>
+        </ul>
+
+        <h2>7. Limit Exposure to Environmental Pollutants</h2>
+        <ul>
+            <li><strong>Avoid Heavy Traffic Areas:</strong> When possible, avoid spending time in areas with heavy traffic and poor air quality.</li>
+            <li><strong>Use Air Purifiers:</strong> Consider using air purifiers at home to reduce indoor air pollution.</li>
+        </ul>
+
+        <h2>8. Regular Health Screenings</h2>
+        <ul>
+            <li><strong>Annual Check-Ups:</strong> Schedule annual physical exams with your healthcare provider.</li>
+            <li><strong>Lung Cancer Screening:</strong> If you have a high risk of lung cancer, such as a long history of smoking, discuss lung cancer screening options with your doctor.</li>
+        </ul>
+
+        <h2>9. Avoid Carcinogenic Substances</h2>
+        <ul>
+            <li><strong>Read Labels:</strong> Check product labels for warnings about cancer-causing substances.</li>
+            <li><strong>Use Alternatives:</strong> Opt for products that do not contain harmful chemicals whenever possible.</li>
+        </ul>
+
+        <h2>10. Vaccination</h2>
+        <ul>
+            <li><strong>HPV Vaccine:</strong> Get vaccinated against human papillomavirus (HPV), which is linked to certain cancers.</li>
+            <li><strong>Flu Vaccine:</strong> Consider annual flu vaccinations to prevent respiratory infections that can harm lung health.</li>
+        </ul>
+    </div>
+    <div class="container" id="precautio">
+        <h1>Precautionary Measures to Prevent Lung Cancer</h1>
+        <h2>Avoid Smoking</h2>
+        <ul>
+            <li>The most effective way to prevent lung cancer is to never start smoking, or to quit if you already smoke. Seek professional help or use smoking cessation aids if needed.</li>
+        </ul>
+
+        <h2>Avoid Secondhand Smoke</h2>
+        <ul>
+            <li>Avoid exposure to secondhand smoke by staying away from environments where people smoke, and advocating for smoke-free policies in public places.</li>
+        </ul>
+
+        <h2>Test for Radon</h2>
+        <ul>
+            <li>Radon is a naturally occurring radioactive gas that can accumulate indoors. Test your home for radon and install a radon mitigation system if levels are high.</li>
+        </ul>
+
+        <h2>Occupational Safety</h2>
+        <ul>
+            <li>If you work in an environment with potential exposure to carcinogens (such as asbestos or diesel exhaust), follow all safety guidelines and use protective equipment.</li>
+        </ul>
+
+        <h2>Healthy Diet</h2>
+        <ul>
+            <li>Eat a diet rich in fruits and vegetables. These foods contain vitamins, minerals, and antioxidants that may help protect against cancer.</li>
+        </ul>
+
+        <h2>Regular Exercise</h2>
+        <ul>
+            <li>Engage in regular physical activity. Exercise helps maintain a healthy weight and may reduce the risk of lung cancer.</li>
+        </ul>
+
+        <h2>Limit Exposure to Environmental Pollutants</h2>
+        <ul>
+            <li>Reduce exposure to outdoor air pollution by avoiding heavy traffic areas and using air purifiers indoors if necessary.</li>
+        </ul>
+
+        <h2>Regular Health Screenings</h2>
+        <ul>
+            <li>Participate in regular health check-ups and screenings, especially if you have a history of smoking or other risk factors for lung cancer. Early detection can improve treatment outcomes.</li>
+        </ul>
+
+        <h2>Avoid Carcinogenic Substances</h2>
+        <ul>
+            <li>Be cautious with substances known to cause cancer, such as certain chemicals in household products or industrial materials. Use these substances in well-ventilated areas and follow safety instructions.</li>
+        </ul>
+
+        <h2>Vaccination</h2>
+        <ul>
+            <li>Get vaccinated against viruses known to increase cancer risk, such as human papillomavirus (HPV), which is linked to certain types of lung cancer.</li>
+        </ul>
+    </div>
+    <script>
+        // Retrieve the prediction result from the server
+        var prediction = {{ prediction  }};
+        var precautionContainer = document.getElementById('precautionContainer');
+        var precautio = document.getElementById('precautio');
+        // Select the result message element
+        var resultMessage = document.getElementById('resultMessage');
+        var resultImage = document.getElementById('resultImage');
+
+        // Conditionally set the message and image based on the prediction
+        if (prediction === 1) {
+            resultMessage.classList.add('alert-danger');
+            resultMessage.textContent = 'You have lung cancer. Please consult a healthcare professional immediately.';
+            resultImage.src = '/static/lungcancer.jpeg'; // Adjust the path as needed
+            precautionContainer.style.display = 'none'; 
+            precautio.style.display = 'block';
+        } else if (prediction === 2) {
+            resultMessage.classList.add('alert-success');
+            resultMessage.textContent = 'You do not have lung cancer. Here are some tips to maintain lung health.';
+            resultImage.src = '/static/healthylung.jpeg'; // Adjust the path as needed
+            precautionContainer.style.display = 'block'; 
+            precautio.style.display = 'none';
+        } else {
+            resultMessage.classList.add('alert-warning');
+            resultMessage.textContent = 'Prediction result unavailable.';
+            resultImage.style.display = 'none'; // Hide image if prediction result is unavailable
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

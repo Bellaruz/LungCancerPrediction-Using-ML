@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Prediction</title>
+    <style>
+        body {
+            background-image: url('static/lungimg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif; /* Change font if needed */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px; /* Adjust container width as needed */
+            margin: auto;
+            padding: 20px;margin-left: 10%;
+            margin-top: 5%;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+        }
+        h1 {
+            text-align: center;
+            color: #333; /* Dark text color */
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: block;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff; /* Bootstrap's primary color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker shade of primary color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lung Cancer Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="smoking">Smoking</label>
+                <select id="smoking" name="smoking" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="yellow_fingers">Yellow Fingers</label>
+                <select id="yellow_fingers" name="yellow_fingers" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="anxiety">Anxiety</label>
+                <select id="anxiety" name="anxiety" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="peer_pressure">Peer Pressure</label>
+                <select id="peer_pressure" name="peer_pressure" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="chronic_disease">Chronic Disease</label>
+                <select id="chronic_disease" name="chronic_disease" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="fatigue">Fatigue</label>
+                <select id="fatigue" name="fatigue" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="allergy">Allergy</label>
+                <select id="allergy" name="allergy" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="wheezing">Wheezing</label>
+                <select id="wheezing" name="wheezing" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="alcohol_consuming">Alcohol Consuming</label>
+                <select id="alcohol_consuming" name="alcohol_consuming" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="coughing">Coughing</label>
+                <select id="coughing" name="coughing" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="shortness_of_breath">Shortness of Breath</label>
+                <select id="shortness_of_breath" name="shortness_of_breath" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="swallowing_difficulty">Swallowing Difficulty</label>
+                <select id="swallowing_difficulty" name="swallowing_difficulty" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="chest_pain">Chest Pain</label>
+                <select id="chest_pain" name="chest_pain" required>
+                    <option value="1">No</option>
+                    <option value="2">Yes</option>
+                </select>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
